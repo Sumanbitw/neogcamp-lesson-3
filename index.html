@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
+    <link href="style.css" rel="stylesheet" />
 </head>
 <body>
     <h1>sumanbitw component library</h1>
@@ -18,45 +19,47 @@
     <h2>This is the second biggest heading</h2>
 
     <p>Let me show you the normal text.This is free flowing and will wrap at the end like a paragraph</p>
+    
+    <p>This contains a <strong>bold</strong>  text</p>
     <small>This is relatively smaller text.</small>
 
     <hr />
 
     <h2>container</h2>
     <h3>fluid container</h3>
-    <div>This is a fluid container and  it will go till the end of the page</div>
+    <div class="container">This is a fluid container and  it will go till the end of the page</div>
 
     <h3>center container</h3>
-    <div>This is centered container and it will go till the specified width</div>
+    <div class="container-center">This is centered container and it will go till the specified width</div>
 
     <hr />
 
     <h2>@links</h2>
 
-    <a href="/">Pimary Link</a>
-    <a href="/">Secondary Link</a>
+    <a class="link link-primary" href="/">Pimary Link</a>
+    <a class="link link-secondary" href="/">Secondary Link</a>
 
     <hr/>
 
     <h2>@lists</h2>
     <h3>unordered lists</h3>
-
+    
     <ul>
-        <li>Item one</li>
-        <li>Item two</li>
-        <li>Item three</li>
+        <li class="list-non-bullet">Item one</li>
+        <li class="list-non-bullet">Item two</li>
+        <li class="list-non-bullet">Item three</li>
     </ul>
 
     <h3>unordered inline list</h3>
 
-    <ul>
-        <li>Inline item one</li>
-        <li>Inline item two</li>
-        <li>Inline item three</li>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">Inline item one</li>
+        <li class="list-item-inline">Inline item two</li>
+        <li class="list-item-inline">Inline item three</li>
     </ul>
 
     <h3>reverse orderd list</h3>
-    <ol>
+    <ol reversed>
         <li>milk</li>
         <li>egg</li>
         <li>bread</li>
@@ -66,18 +69,18 @@
 
     <h2>@nav</h2>
     <p>Navigation is used on the top of the page and used to get to different pages</p>
-    <nav>
-        <div>iAmBrand</div>
-        <ul>
-            <li>
-                <a href="/">home</a>
+    <nav class="navigation container">
+        <div class="nav-brand">iAmBrand</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">home</a>
 
             </li>
-            <li>
-                <a href="/">products</a>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">products</a>
             </li>
-            <li>
-                <a href="/">about</a>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">about</a>
             </li>
         </ul>
     </nav>
@@ -86,9 +89,9 @@
 
     <h2>@header</h2>
 
-    <header>
-        <img src="images/hero.svg" />
-        <h2>heading inside hero</h2>
+    <header class="hero">
+        <img  class="hero-img" src="images/hero.svg" />
+        <h2 class="hero-heading">suman the <span style="color: var(--primary-color);">web developer</span></h2>
     </header>
 
 
@@ -114,6 +117,7 @@
         <a href="/">Secondary section</a>
 
     </section>
+    <hr />
     <footer><h2>@footer</h2>
 
             <p>header inside footer</p>
